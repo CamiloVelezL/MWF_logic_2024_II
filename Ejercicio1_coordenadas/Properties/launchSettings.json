@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Ejercicio1_coordenadas": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
