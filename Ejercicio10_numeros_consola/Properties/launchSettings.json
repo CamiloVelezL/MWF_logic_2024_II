@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Ejercicio10_numeros_consola": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
