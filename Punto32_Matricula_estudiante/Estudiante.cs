@@ -6,9 +6,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Punto32_Matricula_estudiante
+namespace MatriculaEestudiante
 {
-    internal class Estudiante
+    public class Estudiante
     {
+        //atributos del estudiante
+        public string Name { get; set; }
+        public int Creditos { get; set; }
+        public int Estrato { get; set; }
+
+        public Estudiante (string name, int creditos, int estrato)
+        {
+            Name = name;
+            Creditos = creditos;
+            Estrato = estrato;
+        }
+        public override string ToString()
+        {
+            return ($"Estudiante : Name = {Name}, Creditos = {Creditos}, Estrato = {Estrato} ");
+
+        }
+
     }
 }
