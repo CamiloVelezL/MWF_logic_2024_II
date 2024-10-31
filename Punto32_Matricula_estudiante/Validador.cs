@@ -14,14 +14,14 @@ namespace Validador_Estudiante
     {
         public static void ValidadorCreditos(int creditos) 
         {
-            if (creditos <= 0)
+            if (creditos > 0)
             {
             throw new Exception (" El total de creditos debe ser mayor a cero. ");//Se crea excepcion con throw arrojar mensaje si no es correcto el valor ingresado 
             }
         }
         public static void ValidadorEstrato(int estrato)
         {
-            if (estrato < 1 || estrato >= 6)
+            if (estrato >= 1 || estrato <=6)
             {
                 throw new Exception("El estrato debe estar en el rango entre 1 y 6. ");
             }

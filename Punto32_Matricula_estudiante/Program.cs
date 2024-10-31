@@ -35,7 +35,7 @@ while (true)
         int creditos = Validador.SolicitarEntero("Ingrese el número de créditos: ");
         Validador.ValidarValorCredito(creditos);
 
-        int estrato = Validador.SolicitarEntero("Ingrese el estrato (1-6): ");
+        int estrato = Validador.SolicitarEntero("Ingrese el estrato (1-5): ");
         Validador.ValidadorEstrato(estrato);
 
         decimal valorCredito = Validador.SolicitarNumeroDecimal("Ingrese el valor del crédito: ");
