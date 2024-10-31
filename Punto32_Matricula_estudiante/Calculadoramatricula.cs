@@ -1,14 +1,14 @@
 ﻿/*Se creo esta clase para realizar el calculo de matriclula, descuentos y subsidios que aplican a cada estudiamte para mantener
 el (main) lo mas limpio posible */
 
-using MatriculaEestudiante;
+using Matricula_Estudiante;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Matricula_estudiante // la encapsulacion esta dentro de la clase Calculadoramatricula.
+namespace Calculadora_Estudiante // la encapsulacion esta dentro de la clase Calculadoramatricula.
 {
     public class Calculadoramatricula
     {                 //CONSTANTES

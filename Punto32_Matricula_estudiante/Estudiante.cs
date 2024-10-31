@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MatriculaEestudiante
+namespace Matricula_Estudiante
 {
     public class Estudiante
     {
