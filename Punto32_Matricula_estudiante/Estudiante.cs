@@ -11,19 +11,19 @@ namespace Matricula_Estudiante
     public class Estudiante
     {
         //atributos del estudiante
-        public string Name { get; set; }
+        
         public int Creditos { get; set; }
         public int Estrato { get; set; }
 
-        public Estudiante (string name, int creditos, int estrato)
+        public Estudiante (int creditos, int estrato)
         {
-            Name = name;
+           
             Creditos = creditos;
             Estrato = estrato;
         }
         public override string ToString()
         {
-            return ($"Estudiante : Name = {Name}, Creditos = {Creditos}, Estrato = {Estrato} ");
+            return ($"Estudiante : Creditos = {Creditos}, Estrato = {Estrato} ");
 
         }
 

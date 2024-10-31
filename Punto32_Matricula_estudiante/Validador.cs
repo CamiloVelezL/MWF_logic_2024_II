@@ -16,7 +16,7 @@ namespace Validador_Estudiante
         {
             if (creditos <= 0)
             {
-            throw new Exception (" El total de creditos debe ser mayor a cero. ");
+            throw new Exception (" El total de creditos debe ser mayor a cero. ");//Se crea excepcion con throw arrojar mensaje si no es correcto el valor ingresado 
             }
         }
         public static void ValidadorEstrato(int estrato)

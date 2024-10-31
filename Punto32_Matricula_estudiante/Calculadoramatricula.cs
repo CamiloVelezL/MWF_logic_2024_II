@@ -15,11 +15,11 @@ namespace Calculadora_Estudiante // la encapsulacion esta dentro de la clase Cal
         private const int LimiteCreditos = 20;
         private const decimal CreditosExtras = 2.0m;
                       //METODO MATRICULA
-        public decimal CalcularMatricula (Estudiante estudiante, decimal valorCredito)
+        public static decimal CalcularMatricula (Estudiante estudiante, decimal valorCredito)
         {
             decimal CostoBase;
             if (estudiante.Creditos <= LimiteCreditos)
-            {
+             {
                 CostoBase = estudiante.Creditos * valorCredito;
             }
             else
@@ -30,8 +30,8 @@ namespace Calculadora_Estudiante // la encapsulacion esta dentro de la clase Cal
             return CostoBase * (1 - descuento);
             }
                     //METODO DESCUENTO
-        public decimal CalcularDescuento(int Estrato)
-        {
+            public decimal CalcularDescuento(int Estrato)
+            {
             switch (Estrato)
             {
                 case 1:
@@ -46,8 +46,8 @@ namespace Calculadora_Estudiante // la encapsulacion esta dentro de la clase Cal
             }
         }
                    //METODO SUBSIDIO
-        public decimal CalcularSubsidio(int Estrato)
-        {
+            public static decimal CalcularSubsidio(int Estrato)
+            {
             switch (Estrato)
             {
                 case 1:
@@ -58,7 +58,11 @@ namespace Calculadora_Estudiante // la encapsulacion esta dentro de la clase Cal
                     return 0m;
             }
         }
-        
+
+        internal static decimal CalcularSubsidio(Estudiante estudiante, int estrato)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }
