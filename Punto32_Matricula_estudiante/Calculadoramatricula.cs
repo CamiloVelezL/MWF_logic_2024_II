@@ -30,7 +30,7 @@ namespace Calculadora_Estudiante // la encapsulacion esta dentro de la clase Cal
             return CostoBase * (1 - descuento);
             }
                     //METODO DESCUENTO
-            public decimal CalcularDescuento(int Estrato)
+            public static decimal CalcularDescuento(int Estrato)
             {
             switch (Estrato)
             {

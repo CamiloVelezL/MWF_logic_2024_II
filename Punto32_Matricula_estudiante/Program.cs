@@ -45,7 +45,7 @@ while (true)
 
         decimal costoMatricula = Calculadoramatricula.CalcularMatricula(estudiante, valorCredito);
 
-        decimal subsidio = Calculadoramatricula.CalcularSubsidio(estudiante, estrato);
+        decimal subsidio = Calculadoramatricula.CalcularSubsidio(estrato);
 
         MostrarResultados(costoMatricula, subsidio);
     }
@@ -74,15 +74,20 @@ bool ContinuarPrograma()
     while (true)
     {
         Console.Write("\n¿Desea calcular la matrícula de otro estudiante? (s/n): ");
-        string respuesta = Console.ReadLine().Trim().ToLower();
-        if (respuesta == "s" || respuesta == "si")
         {
-            return true;
+            string respuesta = Console.ReadLine()?.ToLower() ?? "";
+
+
+             if (respuesta == "s" || respuesta == "si")
+             {
+                    return true;
+             }
+             else if (respuesta == "n" || respuesta == "no")
+             {
+                    return false;
+             }
+             Console.WriteLine("Responda 's' para sí o 'n' para no.");
+            
         }
-        else if (respuesta == "n" || respuesta == "no")
-        {
-            return false;
-        }
-        Console.WriteLine("Responda 's' para sí o 'n' para no.");
     }
 }
