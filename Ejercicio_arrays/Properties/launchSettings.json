@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Ejercicio_arrays": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
